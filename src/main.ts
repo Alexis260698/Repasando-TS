@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
 //import './topics/01-basics-types'
 //import './topics/02-object-interface.ts'
-import './topics/03-functions.ts'
+import './topics/05-basic-destructuring.ts'
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

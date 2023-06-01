@@ -23,6 +23,29 @@ function multiply(firstNumber:number, SecondNumber?: number, base:number = 2){
 
 const multiplyResult: number= multiply(5);
 
+interface icharacter {
+    name:string,
+    hp:number,
+    showHp:()=> void;
+}
+
+const healCharacter =(character: icharacter, amount: number) =>{
+
+    character.hp+=amount;
+
+}
+
+const alexis : icharacter = {
+    name: 'Alexis',
+    hp: 50,
+    showHp(){
+        console.log(`Puntos de vida ${this.hp}`);
+    }
+}
+
+alexis.showHp();
+healCharacter(alexis, 10);
+alexis.showHp();
 console.log({result ,result2 , multiplyResult});
 
 export{};
